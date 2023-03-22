@@ -4,41 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Portfolio</title>
 </head>
 <body>
-    <Navbar id="nav-menu" class="header">
-        <a href="" class ="logo">Portfolio</a>
-        <nav class ="navbar" >
-            <a href="#home"  class="active">Home</a>
-            <a href="#"  id="about" class="about section">About Me</a>
-            <a href="#" id="skills">Skills</a>
-            <a href="#" id="projects">Projects</a>
-            <a href="#" id="contact">Contact & Resume</a>
-        </nav>
-        
+<div class="hero">
+    <Navbar id="nav-menu" >
+        <img src="./images/Minimalist_Work_Space_Logo__1_-removebg-preview.png" alt="">
+        <ul>
+            <li><a href="" id="home">Home</a></li>
+            <li><a href="#aboutsection" id="about" class="about section">About</a></li>
+            <li><a href="#skillsection" id="skills">Skills</a></li>
+            <li><a href="#projectsection" id="projects">Projects</a></li>
+            <li><a href="#contactsection" id="contact">Contact</a></li>
+            <li><a href="#resumesection">Resume</a></li>
+            
+        </ul>
     </Navbar>
-    <section  class="home">
-      <div class="home-content" id="home">
-         <h3>Hi, I am</h3>
-         <h1>Deepak Pandey</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, at magni adipisci tempora laudantium commodi.</p>
-         <div class="social-media">
-            <a href=""><i class='bx bxl-linkedin' ></i></a>
-            <a href=""><i class='bx bxl-facebook-circle' ></i></a>
-            <a href=""><i class='bx bxl-twitter' ></i></a>
-            <a href=""><i class='bx bxl-git' ></i></a>
-         </div>
-         <a href="" class="btn">Download CV</a>
-      </div>
-      <div class="profession-container">
-          <div class="profession-box"></div>
-      </div>
-    </section>
+  <div class="fles">
+    <div id="homeSection" class="nav-link home detail">
+        <h1>Hello</h1>
+        <h1 id="user-detail-name">I,m Deepak <span>Pandey</span></h1>
+        <p id="user-detail-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Tempora sint cum maxime cupiditate <br>dolorem aut laboriosam quas ullam praesentium doloribus<br> delectus velit atque provident libero iusto amet, deserunt aspernatur unde.</p>
+        <div id="resumesection" class="nav-link resume"><a href="">Download CV</a></div>
+    </div>
+     <div class="home-img images">
+          <img src="images/shape.png" class="shape">
+          <img class="home-img" src="images/portfolio_image-removebg-preview.png" class="photo">
+     </div>
+  </div>
   
+</div>
+ <div id="aboutsection" class="nav-link about">
+     
+  </div> 
+  <div id="skillsection" class="nav-link skills">
     
+  </div>  
+  <div id="projectsection" class="nav-link projects">
+   
+  </div>
+  <div id="contactsection" class="nav-link contact">
+   
+  </div>     
+</div>   
 </body>
-<script src="script.js"></script>
 </html>
