@@ -1,99 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepak Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Priyanshu Tiwari/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio</title>
+
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- MAIN JS -->
+	<script src="js/main.js" type="text/javascript"></script>
+
+	<!-- MAIN JQUERY -->
+	<script src="js/jquery.js" type="text/javascript"></script>
+
 </head>
 <body>
-<div class="hero">
-    <Navbar id="nav-menu" >
-        
-        <img src="./images/Minimalist_Work_Space_Logo__1_-removebg-preview.png" alt="">
-        <ul>
-            <li><a href="" id="home">Home</a></li>
-            <li><a href="#skillsection" id="skills">Skills</a></li>
-            <li><a href="#projectsection" id="projects">Projects</a></li>
-            <li><a href="#contactsection" id="contact">Contact</a></li>
-            <li><a href="#resumesection">Resume</a></li>
-            <li><a href="" id="about" class="about section">About</a></li>
-            
-        </ul>
-    </Navbar>
-  <div class="fles">
-    <div id="homeSection" class="nav-link home detail">
-        <h1>Hello</h1>
-        <h1 id="user-detail-name">I,m Deepak <span>Pandey</span></h1>
-        <p id="user-detail-intro">A full-stack React Js developer <br>trained by Masai School,<br> Bengaluru. I have a passion to create useful projects<br> and systems which can contribute in everyone's wellbeing.<br> I go to full extent in execution.</p>
-        <div class="icons">
-          <a href=""><i class='bx bxl-linkedin-square icon'></i></a>
-          
-          <a href=""><i class='bx bxl-github icon' ></i></a>
-          <a href=""><i class='bx bxs-envelope icon' ></i></a>
-        </div>
-        <a href="">Download CV</a>
-    </div>
-      <div class="home-img images">
-          <img class="home-img" src="images/photo.png" class="photo">
-     </div>
-  </div>
- 
-  
-</div>
-<div id="skillsection" class="nav-link projects">
-  <h1>My Skills</h1>
-<div class="gridsection">
-      <div class="gridcard">
-          <img class="skills-card-img" src="	https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
-          <h3 class="skills-card-name">HTML 5</h3>
-      </div>
-      <div class="gridcard">
-        <img class="skills-card-img" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg
-        " alt="">
-        <h3 class="skills-card-name">CSS 3</h3>
-      </div>
-      <div class="gridcard ">
-        <img class="skills-card-img" src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640" alt="">
-        <h3 class="skills-card-name">Java Script</h3>
-      </div>
-      <div class="gridcard">
-        <img class="skills-card-img" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="">
-        <h3 class="skills-card-name">React</h3>
-      </div>
-      <div class="gridcard">
-        <img class="skills-card-img" src="https://findlogovector.com/wp-content/uploads/2022/04/mongodb-logo-vector-2022.png" alt="">
-        <h3 class="skills-card-name">Mongo DB</h3>
-      </div>
-      <div class="gridcard">
-        <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png?f=avif&w=256" alt="">
-        <h3 class="skills-card-name">Nodejs</h3>
-      </div>
-</div>
-</div>
-<div id="contactsection" class="nav-link contact">
-  
-    <h1>Contact Me</h1>
-    <div class="halfcontact">
-       <h2>Get in Touch</h2>
-        <h3>Deepak Pandey</h3>
-       <p>You can contact me at the places mentioned below. I will try to get back to you as fast as I can.</p>
-       <p>Cell : +91-7860863692</p>
-       <a href=""><i class='bx bxl-linkedin-square '></i></a>
-       <a href=""><i class='bx bxl-github ' ></i></a>
-       <a href=""><i class='bx bxs-envelope ' ></i></a>
-      
-      </div>   
-         
-</div>
-<div id="resumesection" class="nav-link resume" >
-   <button>Resume</button>
-   <p><i class='bx bx-heart-circle'></i>Thankyou<i class='bx bx-heart-circle'></i> </p>
-</div>
-    
-</div>     
-</div>   
+
+	<!-- NAVBAR -->
+	<section  class="container-fluid mainHeader fadeIn" id="navbar">
+		<div class="navbar navbar-inverse">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Portfolio</a>
+		    </div>
+		    <div id="nav-menu" class="collapse navbar-collapse">
+		      <ul  class="nav navbar-nav">
+		        <li class="active" data-toggle="collapse" data-target=".navbar-collapse.in"><a class="nav-link home" href="#">Home</a></li>
+		        <li><a class="nav-link about" href="#about"   data-toggle="collapse"  data-target=".navbar-collapse.in">About</a></li>
+		        <li><a class="nav-link skills" href="#skills" data-toggle="collapse"   data-target=".navbar-collapse.in">Skills</a></li>
+		        <li><a class="nav-link projects" href="#projects" data-toggle="collapse"  data-target=".navbar-collapse.in">Projects</a></li>
+		        <li><a class="nav-link contact" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact Me</a></li>
+				<li><a class="nav-link resume" class="nav-link contact" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Resume</a></li>
+		      </ul>
+		    </div><!--/.nav-collapse -->
+		  </div>
+		</div>
+	</section>
+
+	<!-- HOME -->
+	<section id="home" class="home fadeIn nav-link home">
+		<div class="header-section">
+				<div class="container checkOutMyPortfolio">
+					<img class="home-img" src="https://avatars.githubusercontent.com/u/115460382?s=400&u=b82c3d8ce546a3591679761568e0b7cec042fb66&v=4">
+						<h2><span>Hello...👋!</span></h2>
+							<h4 id="user-detail-name" >I'm <span class="white"> Deepak Pandey. </span> Aspiring Full Stack Web Developer at Masai School, Life Long Learner.
+
+							</h4>
+					<div>
+						<div class="homelogo">
+							<a href="https://github.com/deepak01112002" target="_blank"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="" height="40"
+							width="40"></a>
+							<a href="https://www.linkedin.com/in/deepak-pandey-0511a3250/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" height="40"
+							width="40"></a>
+							<a href="mailto: deepak8574757609@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="" height="40"
+							width="40"></a>
+						  </div>
+						  <a href="https://drive.google.com/file/d/1JsEdbOta5LqsVNne8RasqhXtYXjPtmVg/view?usp=sharing" id="resume-button-1" target="_blank" download><button id="resume-link-1" class="resumebutton">See My Resume</button></a>
+					</div>	
+				</div>
+			</div>
+	</section>
+
+	<!-- ABOUT US -->
+
+	<section id="about" class="container-fluid fadeIn nav-link about1 about section" id="about1">
+		<h3>About</h3>
+		<div class="container">
+		  <div class="row">
+		   <div class="col-sm-3 col-md-6">
+		      <img class="yourPic img-responsive" src="https://avatars.githubusercontent.com/u/115460382?s=400&u=b82c3d8ce546a3591679761568e0b7cec042fb66&v=4" alt="Deepak Pandey">
+		   </div>
+		   <div class="col-sm-9 col-md-6">
+		      <p>
+		      	<div id="user-detail-intro" class="panel-group" >
+					A full-stack React Js developer trained by Masai School, Bengaluru. I have a passion to create useful projects and systems which can contribute in everyone's wellbeing. I love to make projects which are helpful for masses and serve as a great helpful entity.
+				</div>
+		      </p>
+		   </div>
+		 </div>
+		</div>
+	</section>
+
+	<!-- SKILLS -->
+	<section id="skills" class="container-fluid experience fadeIn" id="experience">
+		<h3>Skills</h3>
+		<div class="container ">
+				<div class="row ">
+				  <div class="col-sm-4 ">
+					<div class="figure ">
+						<img class="skills-card-img img-responsive " src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="Thumb " width="400 " height="500 " />
+						<div class="figcaption "><div class="skills-card-name">HTML</div></div>
+					</div>
+				  </div>
+				  <div class="col-sm-4 ">
+					 <div class="figure ">
+						<img class="skills-card-img img-responsive " src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="Thumb " width="400 " height="300 " />
+						<div class="figcaption "><div class="skills-card-name">CSS</div></div>
+					 </div>
+				  </div>
+				  <div class="col-sm-4 ">
+						<div class="figure ">
+							<img class=" skills-card-img img-responsive " src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640" alt="Thumb " width="400 " height="300 " />
+							<div class="figcaption "><div class="skills-card-name">JavaScript</div></div>
+						</div>
+				  </div>
+				</div>
+				<div class="row ">
+				  <div class="col-sm-4 ">
+					<div class="figure ">
+						<img class=" skills-card-img img-responsive " src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="Thumb " width="400 " height="300 " />
+						<div class="figcaption "><div class="skills-card-name">React</div></div>
+					</div>
+				  </div>
+				  <div class="col-sm-4 ">
+					 <div class="figure ">
+						<img class=" skills-card-img img-responsive " src="https://findlogovector.com/wp-content/uploads/2022/04/mongodb-logo-vector-2022.png" alt="Thumb " width="400 " height="300 " />
+						<div class="figcaption "><div class="skills-card-name">Mongo DB</div></div>
+					 </div>
+				  </div>
+				  <div class="col-sm-4 ">
+						<div class="figure ">
+							<img class=" skills-card-img img-responsive " src="https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png?f=avif&w=256" alt="Thumb " width="400 " height="300 " />
+							<div class="figcaption "><div class="skills-card-name">Node js</div></div>
+						</div>
+				  </div>
+				</div>
+		  <!-- <figure>
+			<img src="https://d13yacurqjgara.cloudfront.net/users/220419/screenshots/1644214/debut-shot.jpg " alt="Thumb " width="400 " height="300 " />
+			<figcaption><div>Thumbnail Caption</div></figcation>
+		  </figure> -->
+		</div>
+	</section>
+	<section class="container-fluid projects fadeIn" id="projects">
+			<!-- <div class="hero">
+		  		<h1>My Projects <strong>I love them</strong> </h1>
+		  	</div> --><h3>My Projects</h3>
+			<div class="container ">
+					<div class="row ">
+					  <div class="col-sm-4 ">
+					  	<div class="figure ">
+						    <img class="img-responsive " src="./img/Homepage.png" alt="Thumb " />
+						    <div class="figcaption "><div>Movies24.com</div></div>
+							
+			  			</div>
+						<div>
+						<p class="project-title">Zee5.com clone</p>
+						<p class="project-description">Easy, Fast And Secure Booking With Instant Confirmation Book in 85,000 destinations across the world.</p>
+						<div  >
+						  <p class="project-tech-stack"><b>Tech Stack :</b> HTML | CSS | JavaScript</p>
+						  <div class="projectflex">
+                         <a class="project-github-link" href="https://github.com/deepak01112002/bright-scent-6664" target="_blank"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="noimage" height="40"
+						  width="40"></a>
+						  <a class="project-deployed-link"  href="https://stunning-travesseiro-f93015.netlify.app/" target="_blank"><button class="livebutton">Live</button></a>
+						</div>
+						</div>
+					   </div>	
+					  </div>
+					  <!-- project 2 -->
+					  <div class="col-sm-4 ">
+						<div class="figure ">
+						  <img class="img-responsive " src="https://user-images.githubusercontent.com/115465871/213980137-578b8b38-f647-4c02-886f-133bbbcbea4e.jpeg" alt="Thumb " width="800 "  />
+						  <div class="figcaption "><div>FASHION FUSION</div></div>
+						  
+						</div>
+					  <div>
+					  <p class="project-title">Abof.com clone</p>
+					  <p class="project-description">Easy, Fast And Secure Booking With Instant Confirmation Book in 85,000 destinations across the world.</p>
+					  <div  >
+						<p class="project-tech-stack"><b>Tech Stack :</b> HTML | CSS | JavaScript | Bootstrap</p>
+						<div class="projectflex">
+					   <a class="project-github-link" href="https://github.com/deepak01112002/tense-wool-1620" target="_blank"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="noimage" height="40"
+						width="40"></a>
+						<a class="project-deployed-link"  href="https://admirable-pavlova-852094.netlify.app/" target="_blank"><button class="livebutton">Live</button></a>
+					  </div>
+					  </div>
+					 </div>	
+					</div>
+					<!-- project 3 -->
+					<div class="col-sm-4 ">
+						<div class="figure ">
+						  <img class="img-responsive " src="https://user-images.githubusercontent.com/115460382/229417982-574e6214-1701-4554-a6dc-529b8d6dceb2.png" alt="Thumb " width="800 "  />
+						  <div class="figcaption "><div>SEPHORA</div></div>
+						  
+						</div>
+					  <div>
+					  <p class="project-title">Sephora.com clone</p>
+					  <p class="project-description">Easy, Fast And Secure Booking With Instant Confirmation Book in 85,000 destinations across the world.</p>
+					  <div  >
+						<p class="project-tech-stack"><b>Tech Stack :</b> React | Redux |     React-router-dom |     Bootstrap | Styled |
+						 Chakra UI</p>
+						<div class="projectflex">
+					   <a class="project-github-link" href="https://github.com/deepak01112002/malicious-thrill-8470" target="_blank"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="noimage" height="40"
+						width="40"></a>
+						<a class="project-deployed-link"  href="https://dancing-maamoul-b9794a.netlify.app/" target="_blank"><button class="livebutton">Live</button></a>
+					  </div>
+					  </div>
+					 </div>	
+					</div>
+					  
+					
+					  
+					  
+					</div>
+			  <!-- <figure>
+			    <img src="https://d13yacurqjgara.cloudfront.net/users/220419/screenshots/1644214/debut-shot.jpg " alt="Thumb " width="400 " height="300 " />
+			    <figcaption><div>Thumbnail Caption</div></figcation>
+			  </figure> -->
+			</div>
+	</section>
+	<!-- CONTACT ME -->
+	<section id="contact" class="contactMe fadeIn">
+		 <h2>Contact Me</h2>
+         <p>Deepak Pandey</p>
+		 <p id="contact-phone">Cell : +91 7860-86-3692</p>
+		 <p>Thank you !</p>
+		 <p id="thankyou">You can contact me at the places mentioned below. I will try to get back to you as fast as I can.</p>
+		 <div class="logo">
+           <a href="https://github.com/deepak01112002" target="_blank"  id="contact-github"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="" height="40"
+		   width="40"></a>
+		   <a href="https://www.linkedin.com/in/deepak-pandey-0511a3250/" target="_blank" id="contact-linkedin"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" height="40"
+		   width="40"></a>
+		   <a href="mailto: deepak8574757609@gmail.com"  id="contact-email"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="" height="40"
+		   width="40" ></a>
+		 </div>
+		 
+		 <a href="https://drive.google.com/file/d/1JsEdbOta5LqsVNne8RasqhXtYXjPtmVg/view?usp=sharing" id="resume-button-1" target="_blank" ><button id="resume-link-1" class="resumebutton">See My Resume</button></a>
+			
+		</div>
+	</section>
+	<section class="container-fluid mainFooter fadeIn">
+		<div class="container">
+			<div class="footer-top">
+				<p>&copy; 2023  made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://tpriyanshu.bitbucket.io">Deepak Pandey</a>
+				</p>
+			</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+	</section>
 </body>
 </html>
