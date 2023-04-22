@@ -552,3 +552,7 @@ font-size: 2em;
 #thankyou{
   margin: 5px;
 }
+#navbar{
+  position: sticky;
+  top: 0;
+}
