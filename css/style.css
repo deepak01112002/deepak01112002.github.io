@@ -555,4 +555,18 @@ font-size: 2em;
 #navbar{
   position: sticky;
   top: 0;
+  z-index: 999;
+}
+.git-statistics {
+  display: flex;
+  width: 95;
+  margin: auto;
+  justify-content: space-between;
+}
+.git-statistics div{
+  width: 50%;
+}
+
+.git-statistics div img{
+  width: 100%;
 }
