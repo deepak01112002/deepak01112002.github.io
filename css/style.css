@@ -562,11 +562,12 @@ font-size: 2em;
   width: 95;
   margin: auto;
   justify-content: space-between;
+  margin-left: 90px;
 }
 .git-statistics div{
   width: 50%;
 }
 
 .git-statistics div img{
-  width: 100%;
+  width: 70%;
 }
