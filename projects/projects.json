@@ -1,0 +1,54 @@
+[ 
+    
+    
+    {
+        "id": 1,
+        "name": "CLONE OF ABOF E-COMMERCE WEBSITE",
+        "desc": " It was an fashion e-commerce website that offered a wide range of clothing, footwear, and accessories for men and women. However, due to increasing competition and financial difficulties, the website was shut down in 2022",
+        "image": "/assests/images/projects/mlpr.jpg",
+        "links": {
+            "code": "https://github.com/Ashishmeel007/tense-wool-1620"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Apple TV Website Clone",
+        "desc": "The Apple TV website is the official online platform for Apple's streaming media player, the Apple TV. The website showcases the device's features and benefits, including access to a variety of popular streaming services, such as Netflix, Amazon Prime Video, and Hulu, as well as Apple's own original programming through its subscription service, Apple TV+. Users can also purchase and rent movies and TV shows directly from the website, and explore a wide selection of apps and games available for the Apple TV. Additionally, the website provides support resources, user guides, and troubleshooting information for the device.",
+        "image": "/assests/images/projects/covidml.png",
+        "links": {
+            "code": "https://github.com/Ashishmeel007/overrated-secretary-9231"
+        }
+    },
+    {
+        "id": 3,
+        "name": "TITANIC-SURVIVOUR-ANALYSIS",
+        "desc": "In this project we are going to build an artificial intelligence neural network to classify the passengers into two classes based on whether they survived the titanic incident or not",
+        "image": "/assests/images/projects/Titanic.png",
+        "links": {
+            "view": "https://github.com/SauravMukherjee44/TITANIC-SURVIVOUR-ANALYSIS/blob/main/Titanic_Survivors_Analysis_By_Saurav_.ipynb",
+            "code": "https://github.com/SauravMukherjee44/TITANIC-SURVIVOUR-ANALYSIS"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Portfolio Website",
+        "desc": "Personal portfolio website. Don't need much info about it, just scroll down. You're here only!",
+        "image": "/assests/images/projects/portfolio1.PNG",
+        "links": {
+            "view": "#",
+            "code": "#"
+        }
+    },
+    
+    {
+        "id": 5,
+        "name": "College Library Website",
+        "desc": "This is a College Library Website in which you can keep a record of all the books you have issued.© 2021 Saurav Mukherjee",
+        "image": "/assests/images/projects/Library.png",
+        "links": {
+            "view": "https://sauravmukherjee44.github.io/Aec-Library-Website/",
+            "code": "https://github.com/SauravMukherjee44/Aec-Library-Website"
+        }
+    }
+    
+]
