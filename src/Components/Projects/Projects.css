@@ -1,0 +1,126 @@
+#projects{
+    /* border:1px solid red; */
+    height:auto;
+    width: 90%;
+    margin: auto;
+    color: #bdbddd;
+}
+#projects>h1{
+    text-decoration-line: underline;
+    color: #8cbcc4;
+}
+
+.project-card{
+    /* border: 1px solid #d21313; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+    text-align: justify;
+}
+
+.project-image{
+    width: 60%;
+    height: 95%;
+}
+
+.project-image>img{
+    border-radius: 10px;
+    border: 5px solid #505248;
+    border-radius: 15px;
+ }
+
+.project-about{
+    width: 35%;
+    height: 95%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3px;
+}
+
+.project-description{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.project-title{
+    font-size: 30px;
+    color: #40e48f;
+}
+
+.project-tech-stack{
+    /* border: 1px solid #ce1515; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-tech-stack>div>svg{
+    color: #35d00e;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.project-tech-stack>div>svg:hover{
+    transition: 0.9s;
+    padding: 2px;
+}
+
+.project-btns{
+    display: flex;
+    width: max-content;
+}
+
+.project-btns>a>button{
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    color: black;
+} 
+
+
+.project-btns>a>button:hover{
+  background-color: #35d00e;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .project-card{
+      flex-direction: column;
+    }
+    
+    .project-image{
+        width: 80%;
+        height: 80%;
+    }
+
+    .project-title{
+        font-size: 20px;
+       width: max-content;
+    }
+
+    .project-description{
+        font-weight: bold;
+        font-size: 15px;
+        width: 250%;
+       
+    }
+
+    .project-tech-stack{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+}

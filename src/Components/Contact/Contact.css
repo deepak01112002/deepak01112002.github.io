@@ -1,0 +1,146 @@
+#contact {
+  /* border: 1px solid red; */
+  height: auto;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+  top: 40px;
+  padding: 10px;
+}
+
+#contact > h1 {
+  text-decoration-line: underline;
+  color: #8cbcc4;
+  margin: 20px;
+}
+
+.contact-me {
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.contact-me > div:nth-child(1) {
+  width: 45%;
+  margin-left: 100px;
+}
+
+.contact-me > div:nth-child(2) {
+  width: 55%;
+}
+
+label {
+  margin: 5px;
+  display: block;
+  text-align: left;
+  color: #ecdcc1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  display: block;
+  background: transparent;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #3ed012;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+  color: #35d00e;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info > div > h2 {
+  color: #04aa6d;
+  margin-top: 30px;
+}
+
+.contact-info > div:nth-child(2)>div>a {
+text-decoration: none;
+  /* border: 1px solid #c70e0e; */
+  font-size: 20px;
+  width: 100%;
+  line-height: 50px;
+  font-weight: 400;
+  color: #35d00e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.contact-github-linkedin{
+    margin-top: 40px;
+}
+
+
+.contact-github-linkedin>a{
+    margin: 10px;
+    font-size: 25px;
+    color: #35d00e;
+}
+
+@media (max-width: 800px) {
+  .contact-me {
+    display: block;
+  }
+
+  .contact-me > div:nth-child(1) {
+    width: 90%;
+    margin: auto;
+  }
+
+  .contact-me > div:nth-child(2) {
+    width: 90%;
+    margin: auto;
+  }
+
+  .contact-info > div:nth-child(2)>div>a {
+    font-size: 16px;
+    width: 100%;
+    line-height: 50px;
+    font-weight: 400;
+    color: #35d00e;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  
+}

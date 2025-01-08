@@ -1,0 +1,45 @@
+
+.footer-main{
+    height: 100px;
+    width: 100%;
+    margin-top: 100px;
+    background: #212235;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-main>div{
+   margin: 25px;
+   color: #35d00e;
+   font-size: 17px;
+   font-weight: 600;
+}
+
+.footer-main>div>a{
+   text-decoration: none;
+   color: #35d00e;
+ }
+
+.footer-svg> svg{
+    font-size: 30px;
+  }
+
+ 
+ 
+  @media (max-width: 800px ) {
+
+    .footer-main>div{
+        margin: 20px;
+        font-size: 15px;
+        font-weight: 400;
+     }
+
+
+    .footer-svg> svg{
+        font-size: 30px;
+      }
+
+   }

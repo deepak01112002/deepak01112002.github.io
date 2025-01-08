@@ -1,0 +1,36 @@
+import React from "react";
+import { ImPhone } from "react-icons/im";
+import { VscGithub } from "react-icons/vsc";
+import { SiGmail } from "react-icons/si";
+import { FiLinkedin } from "react-icons/fi";
+import { CgFileDocument } from "react-icons/cg";
+import { MdOutlineShareLocation } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+import "./Contact.css"
+
+function Contact() {
+  return (
+    <div>
+      <div id="contact" >
+        <h1>GET IN TOUCH</h1>
+        <div className="contact-me">
+          
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Contact;
+
+
+
+
+
+
+
+
+
+
+
+
