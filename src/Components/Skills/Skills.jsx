@@ -1,98 +1,94 @@
 import React from "react";
 import "./Skills.css";
-import { SiBootstrap, SiHtml5, SiMaterialui,SiGit, SiRedux, SiTypescript, SiJavascript, SiCss3, SiC, SiJava, SiTailwindcss } from "react-icons/si"; // Add SiC, SiJava, and SiTailwindcss
-import { FaReact } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiJava,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiRedux,
+  SiExpress,
+  SiNestjs,
+  SiSpringboot,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiRedis,
+  SiKubernetes,
+  SiGit,
+} from "react-icons/si";
+import { FaReact, FaAws, FaDocker } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
-import { SiMongodb, SiExpress } from "react-icons/si";
-import { FaMdb } from "react-icons/fa";
+
+const skillCategories = [
+  {
+    category: "Languages",
+    skills: [
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Java", icon: SiJava },
+    ],
+  },
+  {
+    category: "Frontend",
+    skills: [
+      { name: "React.js", icon: FaReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Redux", icon: SiRedux },
+    ],
+  },
+  {
+    category: "Backend",
+    skills: [
+      { name: "Node.js", icon: IoLogoNodejs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "NestJS", icon: SiNestjs },
+      { name: "Spring Boot", icon: SiSpringboot },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Redis", icon: SiRedis },
+    ],
+  },
+  {
+    category: "Cloud & DevOps",
+    skills: [
+      { name: "AWS", icon: FaAws },
+      { name: "Docker", icon: FaDocker },
+      { name: "Kubernetes", icon: SiKubernetes },
+      { name: "Git", icon: SiGit },
+    ],
+  },
+];
 
 function Skills() {
-  return <div>
-  <div id="skills">
-           <h1>Skills</h1>
-        <div  data-aos="fade-right" className="skills_icons">
-         <div  className="skills-card">
-          <SiJavascript class="skills-card-img"/>
-          <h6 className="skills-card-name">JavaScript</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiTypescript class="skills-card-img"/>
-          <h6 className="skills-card-name" >TypeScript</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiHtml5 class="skills-card-img"/>
-          <h6 className="skills-card-name" >HTML</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiCss3 class="skills-card-img"/>
-          <h6 className="skills-card-name" >CSS</h6>
-         </div>
-
-         <div  className="skills-card">
-          <FaReact class="skills-card-img"/>
-          <h6 className="skills-card-name">React</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiRedux class="skills-card-img"/>
-          <h6 className="skills-card-name">Redux</h6>
-         </div>
-
-         <div  className="skills-card">
-          <IoLogoNodejs class="skills-card-img"/>
-          <h6 className="skills-card-name">Nodejs</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiMongodb class="skills-card-img"/>
-          <h6 className="skills-card-name">Mongodb</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiExpress class="skills-card-img"/>
-          <h6 className="skills-card-name">Express</h6>
-         </div>
-
-         <div  className="skills-card">
-          <FaMdb class="skills-card-img"/>
-          <h6 className="skills-card-name">Bootstrap</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiMaterialui class="skills-card-img"/>
-          <h6 className="skills-card-name">Materialui</h6>
-         </div>
-
-         <div  className="skills-card">
-          <SiBootstrap class="skills-card-img"/>
-          <h6 className="skills-card-name">Bootstrap</h6>
-         </div>
-         <div className="skills-card">
-
-         <SiC className="skills-card-img"/> 
-         <h6 className="skills-card-name">C Language</h6>
-         </div>
-
-         <div className="skills-card">
-         <SiJava className="skills-card-img"/> 
-         <h6 className="skills-card-name">Basic Java</h6>
-         </div>
-
-         <div className="skills-card">
-         <SiTailwindcss className="skills-card-img"/> 
-         <h6 className="skills-card-name">Tailwind CSS</h6>
-         </div>
- 
-         <div className="skills-card">
-         <SiGit className="skills-card-img"/>  
-         <h6 className="skills-card-name">Git</h6>
-         </div>
+  return (
+    <div id="skills">
+      <h1>Skills</h1>
+      {skillCategories.map((categoryObj) => (
+        <div key={categoryObj.category} className="skills-category">
+          <h3 className="skills-category-heading">{categoryObj.category}</h3>
+          <div className="skills-grid">
+            {categoryObj.skills.map((skill, index) => {
+              const IconComponent = skill.icon;
+              return (
+                <div
+                  key={skill.name}
+                  className="skills-card"
+                  data-aos="fade-up"
+                  data-aos-delay={Math.min(index * 50, 400)}
+                >
+                  <IconComponent className="skills-card-img" />
+                  <h6 className="skills-card-name">{skill.name}</h6>
+                </div>
+              );
+            })}
+          </div>
         </div>
-     </div>
-  </div>;
+      ))}
+    </div>
+  );
 }
 
 export default Skills;

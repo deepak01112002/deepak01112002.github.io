@@ -22,10 +22,19 @@ html{
   scroll-behavior: smooth;
   font-size: 13px;
   font-weight: bolder;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover{
-  color: #1dcfc9;
+  color: #40e48f;
+  transition: color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background: rgba(35, 40, 62, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 

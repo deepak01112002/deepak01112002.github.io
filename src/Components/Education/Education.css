@@ -1,0 +1,73 @@
+.education-section {
+  width: 90%;
+  padding: 100px 5%;
+  margin: auto;
+}
+
+.education-section > h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #40e48f;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.education-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.education-card {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(64, 228, 143, 0.2);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  border-color: rgba(64, 228, 143, 0.6);
+  box-shadow: 0 0 20px rgba(64, 228, 143, 0.15);
+}
+
+.edu-icon {
+  font-size: 2rem;
+  color: #40e48f;
+}
+
+.edu-degree {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.edu-institution {
+  font-size: 1rem;
+  color: #40e48f;
+}
+
+.edu-duration {
+  font-size: 0.9rem;
+  color: #bdbddd;
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 60px 4%;
+  }
+
+  .education-grid {
+    flex-direction: column;
+  }
+}

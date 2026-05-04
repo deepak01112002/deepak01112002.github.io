@@ -1,3 +1,12 @@
+:root {
+  --bg: #23283e;
+  --card-bg: rgba(255,255,255,0.05);
+  --accent: #40e48f;
+  --text: #bdbddd;
+  --text-heading: #ffffff;
+  --border-glass: rgba(64,228,143,0.2);
+  --card-bg-solid: #2a2f4c;
+}
 
 .dark {
   --clr-bg: #23283e;
@@ -17,7 +26,8 @@
 body{
   position: relative;
   overflow-x: hidden;
-  background-color: #23283e;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 

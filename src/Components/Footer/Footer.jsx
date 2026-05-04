@@ -1,24 +1,34 @@
 import React from "react";
 import "./Footer.css";
-import { BsCpuFill } from "react-icons/bs";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaGithubAlt } from "react-icons/fa";
+import { FiLinkedin } from "react-icons/fi";
 
 function Footer() {
   return (
     <div className="footer-main">
-      <div>
-        <a target="_blank" href="https://www.linkedin.com/in/deepak-pandey-0511a3250/">
-          <span className="footer-svg">
-            <BsCpuFill />
-          </span>
-          <div>Designed & Built by Deepak pandey</div>
-        </a>
+      <div className="footer-credit">
+        <p>Designed &amp; Built by <span>Deepak Pandey</span></p>
+        <p className="footer-built-with">
+          <FaReact className="footer-react-icon" /> Built with React.js
+        </p>
       </div>
-      <div>
-        <span className="footer-svg">
-          <FaReact />
-        </span>
-        <div>Built Using ReactJs</div>
+      <div className="footer-social">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/deepak01112002"
+          aria-label="GitHub"
+        >
+          <FaGithubAlt />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/deepak-pandey-0511a3250/"
+          aria-label="LinkedIn"
+        >
+          <FiLinkedin />
+        </a>
       </div>
     </div>
   );

@@ -1,28 +1,31 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { FiMenu } from "react-icons/fi";
 import { CgClose } from "react-icons/cg";
 import { HiHome } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaTools } from "react-icons/fa";
-import {AiTwotoneSetting} from "react-icons/ai";
-import {MdContacts} from "react-icons/md";
+import { FaTools, FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import { AiTwotoneSetting } from "react-icons/ai";
+import { MdContacts } from "react-icons/md";
 
 
 function Navbar() {
-  const [hameburger, setHamberger] = useState("hameburger-open-icon-invisible");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const handleHamburgToggle = (e) => {
-    if (hameburger === "hameburger-open-icon-invisible") {
-      setHamberger("nav-all-opt");
-    } else {
-      setHamberger("hameburger-open-icon-invisible");
-    }
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleHamburgToggle = () => {
+    setMenuOpen((prev) => !prev);
   };
 
   return (
     <header>
-      <div id="nav-menu" className="navbar">
+      <div id="nav-menu" className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
         <div>
           <a className="nav-head" href="#">
             DEEPAK PANDEY
@@ -30,63 +33,65 @@ function Navbar() {
         </div>
 
         <a onClick={handleHamburgToggle} className="hameburger-open-icon">
-          {hameburger == "nav-all-opt" ? (
+          {menuOpen ? (
             <CgClose size="35px" />
           ) : (
             <FiMenu size="35px" />
           )}
         </a>
-        <div id="thirdCircle" className={hameburger}>
+        <div id="thirdCircle" className={menuOpen ? 'nav-all-opt' : 'hameburger-open-icon-invisible'}>
           <a
-            onClick={() => {
-              setHamberger("hameburger-open-icon-invisible");
-            }}
+            onClick={() => setMenuOpen(false)}
             className="nav-link home"
-            href="/#home"
+            href="#home"
           >
-            <span><HiHome/> Home</span>
+            <span><HiHome /> Home</span>
           </a>
           <a
-            onClick={() => {
-              setHamberger("hameburger-open-icon-invisible");
-            }}
+            onClick={() => setMenuOpen(false)}
             className="nav-link about"
-            href="/#about"
+            href="#about"
           >
-           <span><BsFillPersonLinesFill/> About</span>
+            <span><BsFillPersonLinesFill /> About</span>
           </a>
           <a
-            onClick={() => {
-              setHamberger("hameburger-open-icon-invisible");
-            }}
+            onClick={() => setMenuOpen(false)}
             className="nav-link skills"
-            href="/#skills"
+            href="#skills"
           >
-           <span><FaTools/> Skills </span>
+            <span><FaTools /> Skills</span>
           </a>
           <a
-            onClick={() => {
-              setHamberger("hameburger-open-icon-invisible");
-            }}
+            onClick={() => setMenuOpen(false)}
             className="nav-link projects"
-            href="/#projects"
+            href="#projects"
           >
-           <span><AiTwotoneSetting/> Projects</span>
+            <span><AiTwotoneSetting /> Projects</span>
           </a>
           <a
-            onClick={() => {
-              setHamberger("hameburger-open-icon-invisible");
-            }}
-            className="nav-link contact"
-            href="/#contact"
+            onClick={() => setMenuOpen(false)}
+            className="nav-link experience"
+            href="#experience"
           >
-           <span><MdContacts/> Contact</span>
+            <span><FaBriefcase /> Experience</span>
+          </a>
+          <a
+            onClick={() => setMenuOpen(false)}
+            className="nav-link education"
+            href="#education"
+          >
+            <span><FaGraduationCap /> Education</span>
+          </a>
+          <a
+            onClick={() => setMenuOpen(false)}
+            className="nav-link contact"
+            href="#contact"
+          >
+            <span><MdContacts /> Contact</span>
           </a>
           <button>
             <a
-              onClick={() => {
-                setHamberger("hameburger-open-icon-invisible")
-              }}
+              onClick={() => setMenuOpen(false)}
               className="nav-link resume"
               id="resume-button-1"
               href="https://drive.google.com/uc?export=download&id=1rSs0pXZTFF1BWm5N1O9ZyaRWNnK-vk22"

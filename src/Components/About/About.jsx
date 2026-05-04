@@ -2,8 +2,7 @@ import React from "react";
 import "./About.css";
 import ParticlesBg from 'particles-bg'
 import { FaRegHandPointRight } from "react-icons/fa";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Tilt from 'react-parallax-tilt';
 
 
 function About() {
@@ -15,23 +14,19 @@ function About() {
         <br></br>
         <br></br>
         <div className="about_me">
-          <div className="home-img-parent">
-            <img
-            data-aos="flip-up"
-              className="home-img"
-              style={{ width: "100%", height: "100%", borderRadius: "50%" }}
-              src="https://i.ibb.co/PMJzmBV/Untitled-design.jpg"
-            />
+          <div data-aos="fade-right" className="home-img-parent">
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
+              <img
+                className="home-img"
+                style={{ width: "100%", height: "100%", borderRadius: "50%" }}
+                src="https://i.ibb.co/PMJzmBV/Untitled-design.jpg"
+                alt="Deepak Pandey"
+              />
+            </Tilt>
           </div>
-          <div data-aos="flip-down" className="my_introduction">
+          <div data-aos="fade-left" className="my_introduction">
             <p id="user-detail-intro">
-              Hi Everyone, I am <span style={{color:"#40e48f"}}>Deepak Pandey</span> from Gorakhpur, Uttar Pradesh. I
-              have completed my Higher Secondary Education from Don Bosco Sr. Sec. School Gorakhpur , Uttar Pradesh. As a Full Stack Web
-              Developer, I possess a broad range of technical skills, including
-              proficiency in HTML, CSS, JavaScript,React JS , Node.js and MongoDB. I have a deep
-              understanding of database design, web services, and API
-              integration, and I am committed to staying up-to-date with the
-              latest trends and technologies in the field.
+              Hi Everyone, I am <span style={{color:"#40e48f"}}>Deepak Pandey</span> from Gorakhpur, Uttar Pradesh. I am a Full Stack Web Developer with expertise in the MERN stack and enterprise backend systems. I have hands-on experience building scalable production applications, integrating payment gateways, and designing secure REST APIs. I am currently expanding my focus into Generative AI and cloud-native architectures.
             </p>
             <br></br>
 
